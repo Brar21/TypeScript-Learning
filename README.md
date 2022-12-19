@@ -71,7 +71,7 @@ Daily Typescript practice and learning from youtube , google anf from other lera
                                  - objects
 
 
-  # Don't but better if you know
+  # Don't use this but better if you know
    - for deal with "any" type in Typescript just go in tsconfig.json under "Type Checking" section:
       ```"noImplicityAny":true``` convert into  ```"noImplicityAny":false```                       
       ### this is not good writing for developer I just show for your knowldge        
