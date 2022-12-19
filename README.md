@@ -28,3 +28,9 @@ Daily Typescript practice and learning from youtube , google anf from other lera
   - Intial some things are commented in tsconfig.json .
   - We uncomment the "rootDir":"./src" give path src folder which we created.
   - Put index.ts file into "src" folder.
+  - than create "dist" folder for get (Javascript) index.js file there.
+  - Check "Emit"  section in tsconfig.json file and give path as "./dist" to "outDir":"./dist" as shown.  
+  - For remove all comments written in "index.ts" file uncoment "removeComments":true line.
+  - To reduce error in our index.js(Javascript) file uncomment "noEmitOnError":true this will never make change in index.js file if any error    in index.ts(Typescript) file will come.
+  - Then just type "tsc" in CMD terminal and see the magic.
+   -- Done with basic setting of tsconfig file.
