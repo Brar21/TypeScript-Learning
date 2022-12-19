@@ -34,3 +34,29 @@ Daily Typescript practice and learning from youtube , google anf from other lera
   - To reduce error in our index.js(Javascript) file uncomment "noEmitOnError":true this will never make change in index.js file if any error    in index.ts(Typescript) file will come.
   - Then just type "tsc" in CMD terminal and see the magic.
    -- Done with basic setting of tsconfig file.
+
+  # How to Debugg our code if Error occur 
+
+    - Go inside of tsconfig.json and uncomment "sourceMap":true file.
+    - Run Tsc command and check magic in "./dist" folder.
+    - For run debugging click fourth option on left side.
+    - Click on "launch.json" .
+    - Select Node.js from dropdown.
+    - launch.json file will open. Add one more file after "program" file
+        ``` "preLaunchTask": "tsc: build - tsconfig.json" ```
+
+    - Afte save  this close Launch.json.
+    - Come on index.ts file and click on Debugg tab after that click on "Launch Program" .    
+    - command for run Debugging
+      ``` F5 ```  for run debugg session just from keyboard.
+      ``` F10 ``` for go line by line.
+       for more watch video carefully.
+
+  # what next now?
+   - Things which we are coverning in this tutorial:
+     -- The any Type
+     -- Arrays
+     -- Tuples
+     -- Enums
+     -- Functions
+     -- Objects     
