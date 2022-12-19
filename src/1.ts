@@ -5,8 +5,8 @@ let level; //hover on it you can see it_show type "any" means it can be number, 
 //example
 //level = 1;
 //level = "varinder";
-function print(data) //we can remove this under line on "data" just press ctrl+p if you have window and select tsconfig.json and 
-{
-     console.log(data)
- }
+//function print(data) //we can remove this under line on "data" just press ctrl+p if you have window and select tsconfig.json and 
+//{
+//     console.log(data)
+// }
 //bad practice because doing this whole typescript ideas is fail, So, never do this;
