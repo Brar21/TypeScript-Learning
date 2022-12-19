@@ -54,9 +54,9 @@ Daily Typescript practice and learning from youtube , google anf from other lera
 
   # what next now?
    - Things which we are coverning in this tutorial:
-     -- The any Type
-     -- Arrays
-     -- Tuples
-     -- Enums
-     -- Functions
-     -- Objects     
+     - The any Type
+     - Arrays
+     - Tuples
+     - Enums
+     - Functions
+     - Objects     
