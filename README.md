@@ -76,4 +76,4 @@ Daily Typescript practice and learning from youtube , google anf from other lera
       ```"noImplicityAny":true``` convert into  ```"noImplicityAny":false```                       
       ### this is not good writing for developer I just show for your knowldge        
 
-      ~~~ make it ```"noImplicityAny":true``` and then comment it after checking what this do actually ~~~
+      ~~ make it ```"noImplicityAny":true``` and then comment it after checking what this do actually 
