@@ -137,6 +137,29 @@ Daily Typescript practice and learning from youtube , google anf from other lera
 
      @Brar21 we good to go!!!
 
-     ***importent thing if you want to use external modules change file extension "module":"es6", under the /*Modules*/ section ***
+
+***importent thing if you want to use external modules change file extension "module":"es6", under the /*Modules*/ section ***
+
+//for example of installation of external modules you can use ```npm i uuid```
+
+# Issues we face after doing this
+    - Still unable to use node_module or npm package directly
+    - Browser show error continuesly after install every dependencies
+    
+# How to get out from this problem
+  - we need a bundler to get full access of npm.packages .
+  - commad you can use to install bundler is written below.
+
+
+```npx create-snowpack-app . --template @snowpack/app-template-blank-typescript```
+                                 or
+```npx create-snowpack-app . --template @snowpack/app-template-blank-typescript --force```
+
+***make change in files as you see on screen***
+
+***Handle npm_modules error we need external @type/library for find type of npm_package***
+  - see screen very attentively for find where you get command.
+
+
 
 
