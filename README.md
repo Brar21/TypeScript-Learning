@@ -100,3 +100,6 @@ Daily Typescript practice and learning from youtube , google anf from other lera
    ### Nullable types
    ### The unkown type
    ### The never type
+
+#                    FOllow the DRY principle                   #
+``` Don't Repeat Yourself ```
