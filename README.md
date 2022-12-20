@@ -110,3 +110,5 @@ Daily Typescript practice and learning from youtube , google anf from other lera
        - when you uncomment it then you see it is enabled by default but you can change it.
        - If you make it "False" then no complie error will come. 
        - Again! this is bady practice never try to use it.
+
+## We done basic of Typescript. Now we are ready to take one step further towords Intermidate Learning ot TSC. 
