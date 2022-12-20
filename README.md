@@ -101,5 +101,5 @@ Daily Typescript practice and learning from youtube , google anf from other lera
    ### The unkown type
    ### The never type
 
-#                    FOllow the DRY principle                   #
+#                    Follow the DRY principle                   #
 ``` Don't Repeat Yourself ```
