@@ -19,7 +19,7 @@ console.log(myIntials)
 
 
 //How to optimize our code let see Example
-
+//just use "Const" brfore enum
 const enum Intial { Starting = 1,Middle,Large }; //by default typescript assign values- 0,1,2....N as length of enums but we can set our on value which can be "number" or "string";
 let myIntial: Intial = Intial.Middle;
 console.log(myIntials)

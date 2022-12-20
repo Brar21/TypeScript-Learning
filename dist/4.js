@@ -12,9 +12,6 @@ var Intials;
 let myIntials = Intials.Middle;
 console.log(myIntials);
 ;
-
-
-//At line line number=18 you can see code is more  optimized as campare to upper code.
 let myIntial = 2;
 console.log(myIntials);
 //# sourceMappingURL=4.js.map

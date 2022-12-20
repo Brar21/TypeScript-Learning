@@ -62,7 +62,7 @@ Daily Typescript practice and learning from youtube , google anf from other lera
        - Functions             
        - Objects    
 
-     ## In Typescript          ##IN Javascript
+     ## In Typescript    /       IN Javascript
      - any                       - Number
      - unknown                   - string
      - never                     - boolean
@@ -77,3 +77,26 @@ Daily Typescript practice and learning from youtube , google anf from other lera
       ### this is not good writing for developer I just show for your knowldge        
 
       ~~ make it ```"noImplicityAny":true``` and then comment it after checking what this do actually 
+
+  # To avoid unUsed Parameters  
+    - Go to "tdconfig.json" file under the  ```Type Checking``` section.
+    - Uncomment file  ```"noUnusedParameters": true ``` and comeback to our file.    
+
+    # To Debugg Return parameter problem
+       - Go to "tdconfig.json" file under the  ```Type Checking``` section.
+       - Uncomment file  ```"noImplicitReturns": true``` and comeback to our file.   
+
+    # To Check any unUsedeLocal is there
+       - Go to "tdconfig.json" file under the  ```Type Checking``` section.
+       - Uncomment file  ```"noUnusedLocals": true``` and comeback to our file.      
+
+
+# Section-2
+
+ - what we cover in this section:
+   ### Type Aliases
+   ### Unions and intesections
+   ### Type narrowing
+   ### Nullable types
+   ### The unkown type
+   ### The never type
