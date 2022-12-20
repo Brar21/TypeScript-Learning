@@ -23,3 +23,4 @@ let taxi = newCar(1);//===1 then we get actual output
 
 // use of Optional property access operators
 console.log(taxi?.buyDate.getFullYear(),taxi?.seat) //for print full year you can use "getFullYear()"
+
