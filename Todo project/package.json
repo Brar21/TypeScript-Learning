@@ -1,11 +1,12 @@
 {
   "name": "todo-project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-   "start": "tsc --watch"
+    "start": "tsc --watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
 }

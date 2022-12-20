@@ -112,3 +112,29 @@ Daily Typescript practice and learning from youtube , google anf from other lera
        - Again! this is bady practice never try to use it.
 
 ## We done basic of Typescript. Now we are ready to take one step further towords Intermidate Learning ot TSC. 
+
+  # what we are covering in section-3
+    -HTML & CSS with Typescript
+        - Simple Todo app Project
+        - How to set-up our "tsconfig.json" file before start coding
+        - where we gonna store our ".ts" extension files
+        - Also see where we get out ".js" extension files
+           
+           
+
+# Step for set-up
+
+     - Make folder name ```Typescript-Todo-App``` then open that folder in Visual studio code.
+
+     ```npm init``` command for get ```package.json``` file.
+     - for install typescript  as dev dependencies run ``` npm i --save-dev typescript``` in terminal shell.
+     - To get "tscongif.json" file run command ```npx tsc --init``` .
+     - Add "start":"tsc --watch" under the "scripts" object in package.json file to convert ".ts" file into ".js" automatically.
+     - Create two folder one name as "src"  and otherone with name "dist".
+     - Provide "rootDir":"./src" in tsconfig.json file under /*Modules*/ section.
+     - Provide "outDir":"./dist" in same file under /*Modules*/ section.
+     - At end run ```npm i``` for node_modules folder.
+
+     @Brar21 we good to go!!!
+
+
