@@ -137,4 +137,6 @@ Daily Typescript practice and learning from youtube , google anf from other lera
 
      @Brar21 we good to go!!!
 
+     ***importent thing if you want to use external modules change file extension "module":"es6", under the /*Modules*/ section ***
+
 
