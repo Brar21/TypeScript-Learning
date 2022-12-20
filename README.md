@@ -103,3 +103,10 @@ Daily Typescript practice and learning from youtube , google anf from other lera
 
 #                    Follow the DRY principle                   #
 ``` Don't Repeat Yourself ```
+
+# TO see NullCheck is enable or disabled 
+       - Go to "tdconfig.json" file under the  ```Type Checking``` section.
+       - Uncomment file  ```"noUnusedLocals": true``` .
+       - when you uncomment it then you see it is enabled by default but you can change it.
+       - If you make it "False" then no complie error will come. 
+       - Again! this is bady practice never try to use it.

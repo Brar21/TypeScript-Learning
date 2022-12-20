@@ -12,4 +12,5 @@ let currancy: "CAN Dollar" | "Euro" | "Pond" = "CAN Dollar" /*No error is coming
 
 //for make it dyanmic
 type Notes = 5 | 10 | 20 | 50 | 100 | 500 | 2000;
-let rupeeNotes : Notes = 500;
+let rupeeNotes: Notes = 500;
+console.log(rupeeNotes)
