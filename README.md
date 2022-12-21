@@ -114,12 +114,18 @@ Daily Typescript practice and learning from youtube , google anf from other lera
 ## We done basic of Typescript. Now we are ready to take one step further towords Intermidate Learning ot TSC. 
 
   # what we are covering in section-3
-    -HTML & CSS with Typescript
+    - HTML & CSS with Typescript
         - Simple Todo app Project
         - How to set-up our "tsconfig.json" file before start coding
         - where we gonna store our ".ts" extension files
         - Also see where we get out ".js" extension files
-           
+    - API intigration.    
+    - CRUD operation with type script.
+        - Create item
+        - Replace item
+        - Update item
+        &
+        - Delete item
            
 
 # Step for set-up

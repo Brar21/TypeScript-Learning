@@ -1,10 +1,40 @@
-import { v4 as uuidV4 } from 'uuid';
-type newtasks = { id: string,title: string,completed: boolean,createdAt: Date }
+import { stringify, v4 as uuidV4 } from 'uuid';
+type newtasks = {
+    id: string,
+    title: string,
+    completed: boolean,
+    createdAt: Date,
+   
+}
+
 const list = document.querySelector<HTMLUListElement>('#list');
 const input = document.querySelector<HTMLInputElement>('#todo');
 const add = document.getElementById("submit") as HTMLFormElement | null
-const tasks: newtasks[] = []
-tasks.forEach(addListItem)
+const tasks: newtasks[] = LoadTaske()
+tasks.forEach(function addListItem(el: newtasks)
+{
+    const item = document.createElement('li');
+    const label = document.createElement('label');
+    const checkbox = document.createElement('input');
+    const dlt = document.createElement('button')
+    dlt.innerText = "DELETE"
+    dlt.addEventListener('click',function ()
+    {
+      Delete(el.id)
+    })
+    checkbox.addEventListener('change',() =>
+    {
+        el.completed = checkbox.checked
+        saveTodos()
+
+        console.log(el)
+    })
+    checkbox.type = 'checkbox'
+    checkbox.checked = el.completed
+    label.append(checkbox,el.title)
+    item.append(label)
+    list?.append(item,dlt)
+})
 
 add?.addEventListener('submit', e =>
 {
@@ -16,34 +46,44 @@ add?.addEventListener('submit', e =>
         title: input.value,
         completed: false,
         createdAt: new Date(),
+     
     }
     tasks.push(task)
-    addListItem(task)
+    saveTodos()
+    window.location.reload()
+    
     input.value = ""
+    
 })
 
-function addListItem(newtask: newtasks)
+function saveTodos()
 {
-    const item = document.createElement('li');
-    const label = document.createElement('label');
-    const checkbox = document.createElement('input')
-    checkbox.addEventListener('change',() =>
-    {
-        newtask.completed = checkbox.checked
-        console.log(newtask)
-    })
-    checkbox.type = 'checkbox'
-    checkbox.checked = newtask.completed
-    label.append(checkbox,newtask.title)
-    item.append(label)
-    list?.append(item)
+    localStorage.setItem('todo',JSON.stringify(tasks))
+    
 }
 
+function LoadTaske():newtasks[]
+{
+    const todoJson = localStorage.getItem("todo")
+    if(todoJson==null) return[]
+   return JSON.parse(todoJson)
+}
 
-
+function Delete(id:string)
+{
+    let del = tasks.filter(
+        function (el)
+        {
+            el.id === id;
+        }
+    )
+    localStorage.setItem('todo',JSON.stringify(del))
+    //window.location.reload()
+   
+}
+//as we get return "any" from loadtaske function but you can just simple pass return type as ":newtasks[]"
 //if we  are getting by id we have to follow this syntex
-    // ? is use for optiona changing as we discuss in basic o typescript
-
+// ? is use for optiona changing as we discuss in basic o typescript
 //handle "uuid" type error we can install another type/library for "uuid_module". Problem where you get that command its pretty easy just on "uuid" you can see there command
 /*npm i --save-dev @types/uuid*/
 //we got an error we have setting in pack use import and export but we no need so go in "tsconfig.json" file and comment out "isolatedModules":true file code.//
