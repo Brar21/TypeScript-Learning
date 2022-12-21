@@ -119,8 +119,8 @@ Daily Typescript practice and learning from youtube , google anf from other lera
         - How to set-up our "tsconfig.json" file before start coding
         - where we gonna store our ".ts" extension files
         - Also see where we get out ".js" extension files
-    - API intigration.    
-    - CRUD operation with type script.
+        - API intigration.    
+        - CRUD operation with type script.
         - Create item
         - Replace item
         - Update item
