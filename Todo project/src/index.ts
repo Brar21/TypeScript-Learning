@@ -1,26 +1,28 @@
 import { v4 as uuidV4 } from 'uuid';
-type newtask={ id: string,title: string,completed: boolean,createdAt: Date }
+type newtasks = { id: string,title: string,completed: boolean,createdAt: Date }
 const list = document.querySelector<HTMLUListElement>('#list');
 const input = document.querySelector<HTMLInputElement>('#todo');
-const add = document.getElementById("#submit") as HTMLFormElement | null //if we  are getting by id we have to follow this syntex
-const tasks:newtask[]=[]
-add?.addEventListener('submit',e =>
+const add = document.getElementById("submit") as HTMLFormElement | null
+const tasks: newtasks[] = []
+tasks.forEach(addListItem)
+
+add?.addEventListener('submit', e =>
 {
     e.preventDefault();
-    if (input?.value == "" || input?.value == null) return // ? is use for optiona changing as we discuss in basic o typescript
+    if (input?.value == "" || input?.value == null) return
 
-    const task:newtask = {
+    const task: newtasks = {
         id: uuidV4(),
         title: input.value,
         completed: false,
-        createdAt: new Date()
+        createdAt: new Date(),
     }
-tasks.push(task)
+    tasks.push(task)
     addListItem(task)
-    input.value=""
+    input.value = ""
 })
 
-function addListItem(newtask: newtask )
+function addListItem(newtask: newtasks)
 {
     const item = document.createElement('li');
     const label = document.createElement('label');
@@ -30,13 +32,18 @@ function addListItem(newtask: newtask )
         newtask.completed = checkbox.checked
         console.log(newtask)
     })
-    checkbox.type = 'checkbox';
-    checkbox.checked=newtask.completed
-    label.append(checkbox,newtask.title);
-    item.append(label);
+    checkbox.type = 'checkbox'
+    checkbox.checked = newtask.completed
+    label.append(checkbox,newtask.title)
+    item.append(label)
     list?.append(item)
-
 }
+
+
+
+//if we  are getting by id we have to follow this syntex
+    // ? is use for optiona changing as we discuss in basic o typescript
+
 //handle "uuid" type error we can install another type/library for "uuid_module". Problem where you get that command its pretty easy just on "uuid" you can see there command
 /*npm i --save-dev @types/uuid*/
 //we got an error we have setting in pack use import and export but we no need so go in "tsconfig.json" file and comment out "isolatedModules":true file code.//
