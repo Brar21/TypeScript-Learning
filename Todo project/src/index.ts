@@ -20,8 +20,8 @@ tasks.forEach(function addListItem(el: newtasks)
     dlt.innerText = "DELETE"
     dlt.addEventListener('click',function ()
     {
-        Delete(el.title)
-        console.log(el.title)
+        Delete(el.id)
+        console.log(el.id)
     })
     checkbox.addEventListener('change',() =>
     {
@@ -70,12 +70,12 @@ function LoadTaske():newtasks[]
    return JSON.parse(todoJson)
 }
 
-function Delete(title:string)
+function Delete(id:string)
 {
     let del = tasks.filter(
         function (e)
         {
-            e.title != title;
+          return  e.id != id;
         }
     )
     localStorage.setItem('todo',JSON.stringify(del))
