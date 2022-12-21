@@ -79,7 +79,7 @@ function Delete(id:string)
         }
     )
     localStorage.setItem('todo',JSON.stringify(del))
-    //window.location.reload()
+    window.location.reload()
    
 }
 //as we get return "any" from loadtaske function but you can just simple pass return type as ":newtasks[]"
