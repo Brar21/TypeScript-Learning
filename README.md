@@ -218,7 +218,7 @@ Daily Typescript practice and learning from youtube , google anf from other lera
 
 
        
-       **GENRICS**
+**GENRICS**
 
         An Art of designing re-usable functions in Typescript, where we pass type along with
 
@@ -268,7 +268,7 @@ Daily Typescript practice and learning from youtube , google anf from other lera
 
 ## Typescript with React.js
 
-   *Topic covering in section-4*
+*Topic covering in section-4*
      - How to install React.js with Typescript
      - Use React Hooks with Typescript
      - Make Counter-app with React.js & Typescript
