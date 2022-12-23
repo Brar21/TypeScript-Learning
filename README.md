@@ -276,4 +276,7 @@ Daily Typescript practice and learning from youtube , google anf from other lera
 
 
 # Commad line and Tsconfig.json file setting
-  
+   - Typescript can be used with react, using command
+   ```npx create-react-app lec --template typescript```
+## Explain Folder Strudture.
+    - '.tsx' file extension.
