@@ -272,6 +272,12 @@ Daily Typescript practice and learning from youtube , google anf from other lera
      - How to install React.js with Typescript
      - Use React Hooks with Typescript
      - Make Counter-app with React.js & Typescript
+     - Props
+     - Children
+     - Events
+     - useState with generics
+     - Synthetic Events and Types
+     - Axios API response Mapping
      - Make Todo-app with Typescript& React.js
 
 
@@ -280,3 +286,31 @@ Daily Typescript practice and learning from youtube , google anf from other lera
    ```npx create-react-app lec --template typescript```
 ## Explain Folder Strudture.
     - '.tsx' file extension.
+
+## Coding Task
+
+# Create a Todo App with API integration
+       - TodoInput Component
+       - TodoItem component
+
+*Tasks*
+
+       - Create Componets
+                *TodoApp.tsx*
+                *TodoInput.tsx*
+                *TodoItem.tsx*
+
+## create a db.json file.
+        [
+        "todos": [
+            {"id": 1, "value": "Item 1", "isCompleted": false},
+            {"id": 2, "value": "Item 2", "isCompleted": true},
+            {"id": 3, "value": "Item 3", "isCompleted": true}
+        ]
+        ]
+## Start json-server on port: 8080
+   ```json-server --watch db.json --port 8080```
+
+            Create an api.ts file to write all API's in it
+
+            Write types for everything
