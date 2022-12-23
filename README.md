@@ -195,70 +195,79 @@ Daily Typescript practice and learning from youtube , google anf from other lera
 
       -   Enums allow a developer to define a set of named constants. Using enums can make it easier to document intent, or create a set of distinct cases. TypeScript provides both numeric and string-based enums.
 
-*Numeric enums*
+**Numeric enums**
 
-```enum Direction1 {
-  Up,
-  Down,
-  Left,
-  Right,
-}
+        ```enum Direction1 {
+        Up,
+        Down,
+        Left,
+        Right,
+        }
 
-let up = Direction1.Up; // 0
-let down = Direction1.Down; // 1
-Tuple
-// Array with exact 2 elements
-let a: [string, string] = ["Hi", "Bye"];
+        let up = Direction1.Up; // 0
+        let down = Direction1.Down; // 1
+        Tuple
+        // Array with exact 2 elements
+        let a: [string, string] = ["Hi", "Bye"];
 
-// 2 D array
-let arr: Array<[number, number]> = [
-  [1, 1],
-  [2, 2],
-]```
-Generics
-An Art of designing re-usable functions in Typescript, where we pass type along with
+        // 2 D array
+        let arr: Array<[number, number]> = [
+        [1, 1],
+        [2, 2],
+        ]```
 
-type Student = { rollNo: number; fullName: string; age: number };
-type Instructor = { id: number; name: string; subject: string };
 
-let students: Student[] = [
-  { rollNo: 1, fullName: "A B", age: 21 },
-  { rollNo: 2, fullName: "R F", age: 27 },
-];
+       
+       **GENRICS**
 
-let instructors: Instructor[] = [
-  { id: 1, name: "A B", subject: "RCT-101" },
-  { id: 2, name: "R F", subject: "RCT-201" },
-];
+        An Art of designing re-usable functions in Typescript, where we pass type along with
 
-function getStudent<Type>(arg: Type[], index: number): Type {
-  return arg[index];
-}
+        type Student = { rollNo: number; fullName: string; age: number };
+        type Instructor = { id: number; name: string; subject: string };
 
-getStudent<Student>(students, 0); // Okay
-getStudent<Instructor>(instructors, 0); // Okay
-keyof
-The keyof operator takes an object type and produces a string or numeric literal union of its keys. The following type P is the same type as “x” | “y”:
+        let students: Student[] = [
+        { rollNo: 1, fullName: "A B", age: 21 },
+        { rollNo: 2, fullName: "R F", age: 27 },
+        ];
 
-type Person = { name: string; lastName: string };
-let person1: Person = { name: "Ritesh", lastName: "Firodiya" };
+        let instructors: Instructor[] = [
+        { id: 1, name: "A B", subject: "RCT-101" },
+        { id: 2, name: "R F", subject: "RCT-201" },
+        ];
 
-type P = keyof Person;
-// P can be `name` or `lastName` i.e. String Varient
+        function getStudent<Type>(arg: Type[], index: number): Type {
+        return arg[index];
+        }
 
-const getPersonValue = (obj: Person, key: P) => {
-  return obj[key];
-};
+        getStudent<Student>(students, 0); // Okay
+        getStudent<Instructor>(instructors, 0); // Okay
 
-getPersonValue(person1, "name"); // Okay
-getPersonValue(person1, "Name"); // Error
-typeof
-Copying type from other object/variable without knowing tyoes ourself
+**keyof**
 
-let s = "hello";
-let n: typeof s;
+           The keyof operator takes an object type and produces a string or numeric literal union of its keys. The following type P is the same type as “x” | “y”:
+
+            type Person = { name: string; lastName: string };
+            let person1: Person = { name: "Ritesh", lastName: "Firodiya" };
+
+            type P = keyof Person;
+            // P can be `name` or `lastName` i.e. String Varient
+
+            const getPersonValue = (obj: Person, key: P) => {
+            return obj[key];
+            };
+
+            getPersonValue(person1, "name"); // Okay
+            getPersonValue(person1, "Name"); // Error
+
+## typeof
+
+            Copying type from other object/variable without knowing tyoes ourself
+
+            let s = "hello";
+            let n: typeof s;
 
 ## Typescript with React.js
+
    *Topic covering in section-4*
      - How to install React.js with Typescript
      - Use React Hooks with Typescript
