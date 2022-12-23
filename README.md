@@ -169,3 +169,9 @@ Daily Typescript practice and learning from youtube , google anf from other lera
 
 
 
+## Typescript with React.js
+   *Topic covering in section-4*
+     - How to install React.js with Typescript
+     - Use React Hooks with Typescript
+     - Make Counter-app with React.js & Typescript
+     - Make Todo-app with Typescript& React.js
