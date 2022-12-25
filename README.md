@@ -1,4 +1,7 @@
 # TypeScript-Learning
+
+By definition, “TypeScript is JavaScript for application-scale development.”
+
 TypeScript is a free and open source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. It is designed for the development of large applications and transpiles to JavaScript
 
 # Is TypeSript is same as JavaScript?
