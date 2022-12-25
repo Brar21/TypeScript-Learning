@@ -14,6 +14,19 @@ TypeScript is known as an Object-oriented programming language whereas JavaScrip
 
 TypeScript is neither a frontend or backend language, but rather a superset of the already established and well-known software language, JavaScript.
 
+# Features of TypeScript
+## TypeScript is just JavaScript. 
+- TypeScript starts with JavaScript and ends with JavaScript. Typescript adopts the basic building blocks of your program from JavaScript. Hence, you only need to know JavaScript to use TypeScript. All TypeScript code is converted into its JavaScript equivalent for the purpose of execution.
+
+## TypeScript supports other JS libraries.
+- Compiled TypeScript can be consumed from any JavaScript code. TypeScript-generated JavaScript can reuse all of the existing JavaScript frameworks, tools, and libraries.
+
+## JavaScript is TypeScript. 
+- This means that any valid .js file can be renamed to .ts and compiled with other TypeScript files.
+
+## TypeScript is portable.
+- TypeScript is portable across browsers, devices, and operating systems. It can run on any environment that JavaScript runs on. Unlike its counterparts, TypeScript doesn’t need a dedicated VM or a specific runtime environment to execute.
+
 ## Steps for intiate 
  ``` npm i -g typescript ```  
  
