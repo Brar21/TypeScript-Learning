@@ -1,6 +1,16 @@
 # TypeScript-Learning
 TypeScript is a free and open source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. It is designed for the development of large applications and transpiles to JavaScript
 
+# Is TypeSript is same as JavaScript?
+
+TypeScript is known as an Object-oriented programming language whereas JavaScript is a prototype based language. TypeScript has a feature known as Static typing but JavaScript does not support this feature. TypeScript supports Interfaces but JavaScript does not.
+
+<img src="https://media-exp1.licdn.com/dms/image/C4E12AQGjvH3eTBDdmg/article-cover_image-shrink_600_2000/0/1597593610760?e=2147483647&v=beta&t=rMt8_v4wXHDrrndOaO6L-n9XS4lNFCxFZFEinEYKX20" alt="Typecript" />
+
+# Is TypeScript frontend or backend?
+
+TypeScript is neither a frontend or backend language, but rather a superset of the already established and well-known software language, JavaScript.
+
 ## Steps for intiate 
  ``` npm i -g typescript ```  
  
