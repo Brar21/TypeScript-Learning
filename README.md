@@ -27,6 +27,11 @@ TypeScript is neither a frontend or backend language, but rather a superset of t
 ## TypeScript is portable.
 - TypeScript is portable across browsers, devices, and operating systems. It can run on any environment that JavaScript runs on. Unlike its counterparts, TypeScript doesn’t need a dedicated VM or a specific runtime environment to execute.
 
+# TypeScript and ECMAScript
+ - The ECMAScript specification is a standardized specification of a scripting language. There are six editions of ECMA-262 published. Version 6 of the standard is codenamed "Harmony". TypeScript is aligned with the ECMAScript6 specification.
+
+ <img src="https://www.tutorialspoint.com/typescript/images/typescript_and_ecmascript.jpg" alt="Typecript-ECMAscript"/>
+ 
 ## Steps for intiate 
  ``` npm i -g typescript ```  
  
