@@ -39,22 +39,23 @@ TypeScript is superior to its other counterparts like CoffeeScript and Dart prog
 
 ## The benefits of TypeScript include −
 
-Compilation − JavaScript is an interpreted language. Hence, it needs to be run to test that it is valid. It means you write all the codes just to find no output, in case there is an error. Hence, you have to spend hours trying to find bugs in the code. The TypeScript transpiler provides the error-checking feature. TypeScript will compile the code and generate compilation errors, if it finds some sort of syntax errors. This helps to highlight errors before the script is run.
+<b>Compilation</b> − JavaScript is an interpreted language. Hence, it needs to be run to test that it is valid. It means you write all the codes just to find no output, in case there is an error. Hence, you have to spend hours trying to find bugs in the code. The TypeScript transpiler provides the error-checking feature. TypeScript will compile the code and generate compilation errors, if it finds some sort of syntax errors. This helps to highlight errors before the script is run.
 
 <b>Strong Static Typing</b> − JavaScript is not strongly typed. TypeScript comes with an optional static typing and type inference system through the TLS (TypeScript Language Service). The type of a variable, declared with no type, may be inferred by the TLS based on its value.
 
-TypeScript supports type definitions for existing JavaScript libraries. TypeScript Definition file (with .d.ts extension) provides definition for external JavaScript libraries. Hence, TypeScript code can contain these libraries.
+TypeScript <b>supports type definitions</b> for existing JavaScript libraries. TypeScript Definition file (with .d.ts extension) provides definition for external JavaScript libraries. Hence, TypeScript code can contain these libraries.
 
-TypeScript supports Object Oriented Programming concepts like classes, interfaces, inheritance, etc.
+TypeScript <b>supports Object Oriented Programming</b> concepts like classes, interfaces, inheritance, etc.
 
-Components of TypeScript
+## Components of TypeScript
 At its heart, TypeScript has the following three components −
 
-Language − It comprises of the syntax, keywords, and type annotations.
+<b>Language</b> − It comprises of the syntax, keywords, and type annotations.
 
-The TypeScript Compiler − The TypeScript compiler (tsc) converts the instructions written in TypeScript to its JavaScript equivalent.
+<b>The TypeScript Compiler</b> − The TypeScript compiler (tsc) converts the instructions written in TypeScript to its JavaScript equivalent.
 
-The TypeScript Language Service − The "Language Service" exposes an additional layer around the core compiler pipeline that are editor-like applications. The language service supports the common set of a typical editor operations like statement completions, signature help, code formatting and outlining, colorization, etc.
+<b>The TypeScript Language Service</b> − The "Language Service" exposes an additional layer around the core compiler pipeline that are editor-like applications. The language service supports the common set of a typical editor operations like statement completions, signature help, code formatting and outlining, colorization, etc.
+ <img src="https://www.tutorialspoint.com/typescript/images/typescript_components.jpg" alt="compiler"/>
 
 ## Steps for intiate 
  ``` npm i -g typescript ```  
