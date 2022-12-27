@@ -1,24 +1,8 @@
-//console.log("hello world");
-//var Names: string = "Typescript-Learning";
-//console.log(Names)
-//ENUM
-//An enum is a special "class" that represents a group of constants (unchangeable variables).
-//Enums come in two flavors string and numeric. Lets start with numeric.
-//Example of Numeric Enum :
-//enum intialization
-//{
-//    start=2,
-//    center,
-//    end
-//}
-//var myENum:intialization=intialization.center
-//console.log(myENum)
-//by default it will take value start from 0...
-//Example od string Enum:
-var StringEnum;
-(function (StringEnum) {
-    StringEnum["starting"] = "starting";
-    StringEnum["ending"] = "ending";
-})(StringEnum || (StringEnum = {}));
-var myStringEnum = StringEnum.starting;
-console.log(myStringEnum);
+//ARRAYS
+//var arr:(string|number)[]=["typescript",1]
+var stringArr = ["basic", "of", "typescript"];
+var numbeArr = [1, 2, 3, 4, 5.25, 32.25];
+var MixArr = [1, "true", 2, 3, "false", true];
+console.log(stringArr);
+console.log(numbeArr);
+console.log(MixArr);
