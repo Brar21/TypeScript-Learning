@@ -1,11 +1,11 @@
-//ARRAYS
-//var arr:(string|number)[]=["typescript",1]
+//Objects
 
-var stringArr: string[] = ["basic","of","typescript"];
-var numbeArr: number[] = [1,2,3,4,5.25,32.25]
-var MixArr: (string | number | boolean)[] = [1,"true",2,3,"false",true]
-
-console.log(stringArr);
-console.log(numbeArr);
-console.log(MixArr);
-
+//Object are stored in manner of key-value pairs.
+var data :{name:string,category:string,id:number,isEasy:boolean,storeData:string[]} = {
+    name: "typescript",
+    category: "language",
+    id: 1,
+    isEasy: true,
+    storeData:["data","is","here"]
+}
+console.log(data.storeData)
