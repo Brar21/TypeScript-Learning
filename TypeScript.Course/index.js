@@ -1,17 +1,10 @@
-//Interfaces or type aliases
-var obj = {
-    name: "typescript",
-    id: 1,
-    isEasylearn: true,
-    fullcourse: "typescript in hindi",
-    price: 299
-};
-var objDetails = {
-    isfree: false,
-    anyCopun: true,
-    isEasylearn: true,
-    fullcourse: "typescript in hindi",
-    price: 299
-};
-console.log(obj);
-console.log(objDetails);
+//Functions
+//function print(a:number,b:number):number{ //return type
+//  return a+b
+//}
+//console.log(print(1,1))
+function defaultParmeter(value, valueDouble) {
+    return Math.pow(value, valueDouble);
+}
+var x = defaultParmeter(5, 5);
+console.log(x);

@@ -1,40 +1,13 @@
-//Interfaces or type aliases
+//Functions
 
-//An Interface is a structure which acts as a contract in our application. It defines the syntax for classes to follow, means a class which implements an interface is bound to implement all its members.
-type DataProps={
-    name: string,
-    id:number
-}
+//function print(a:number,b:number):number{ //return type
+//  return a+b
+//}
+//console.log(print(1,1))
 
-interface Datastored
+function defaultParmeter(value: number,valueDouble: number):number
 {
-    isEasylearn: boolean,
-    fullcourse: string,
-    price:number
-    
+    return value**valueDouble
 }
-interface isFree extends Datastored
-{
-    isfree: boolean;
-    anyCopun:boolean
-}
-
-var obj: DataProps | Datastored= {
-    name: "typescript",
-    id: 1,
-    isEasylearn: true,
-    fullcourse: "typescript in hindi",
-    price: 299,
-    
-}
-var objDetails: isFree = {
-    isfree: false,
-    anyCopun: true,
-    isEasylearn: true,
-    fullcourse: "typescript in hindi",
-    price: 299,
-    
-}
-
-console.log(obj)
-console.log(objDetails)
+let x = defaultParmeter(5,5)
+console.log(x)
