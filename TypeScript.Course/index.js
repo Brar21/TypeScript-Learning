@@ -1,10 +1,17 @@
-//Objects
-//Object are stored in manner of key-value pairs.
-var data = {
+//Interfaces or type aliases
+var obj = {
     name: "typescript",
-    category: "language",
     id: 1,
-    isEasy: true,
-    storeData: ["data", "is", "here"]
+    isEasylearn: true,
+    fullcourse: "typescript in hindi",
+    price: 299
 };
-console.log(data.storeData);
+var objDetails = {
+    isfree: false,
+    anyCopun: true,
+    isEasylearn: true,
+    fullcourse: "typescript in hindi",
+    price: 299
+};
+console.log(obj);
+console.log(objDetails);
