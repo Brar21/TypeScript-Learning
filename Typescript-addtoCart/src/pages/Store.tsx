@@ -1,8 +1,14 @@
-import React from 'react'
-
-const Store = () => {
+import StoreItems from '../components/StoreItems';
+import items from '../data/items.json';
+function Store(){
   return (
-    <div>Store</div>
+      <div>
+          {items.map(item=>(
+          <div key={item.id}>
+              <StoreItems {...item} />
+          </div>
+      ) )} 
+    </div>
   )
 }
 
