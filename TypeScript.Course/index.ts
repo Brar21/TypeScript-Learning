@@ -1,13 +1,9 @@
-//Functions
+//Any Data Type
 
-//function print(a:number,b:number):number{ //return type
-//  return a+b
-//}
-//console.log(print(1,1))
+//if we does not provide any type to variable then it will take "any" type
 
-function defaultParmeter(value: number,valueDouble: number):number
-{
-    return value**valueDouble
-}
-let x = defaultParmeter(5,5)
-console.log(x)
+//var sham:any="jd";
+//sham=25
+//sham = true
+var array1:any[]=["sham",25,true]
+console.log(array1)

@@ -1,10 +1,7 @@
-//Functions
-//function print(a:number,b:number):number{ //return type
-//  return a+b
-//}
-//console.log(print(1,1))
-function defaultParmeter(value, valueDouble) {
-    return Math.pow(value, valueDouble);
-}
-var x = defaultParmeter(5, 5);
-console.log(x);
+//Any Data Type
+//if we does not provide any type to variable then it will take "any" type
+//var sham:any="jd";
+//sham=25
+//sham = true
+var array1 = ["sham", 25, true];
+console.log(array1);
