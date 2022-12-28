@@ -1,9 +1,26 @@
-//Any Data Type
+////Null
 
-//if we does not provide any type to variable then it will take "any" type
+////const sham:null=null;
+////console.log(sham)
+//function NullCheck():string
+//{
+//    return null
+//}
 
-//var sham:any="jd";
-//sham=25
-//sham = true
-var array1:any[]=["sham",25,true]
-console.log(array1)
+//NullCheck("string")
+
+//Basic of Typescript
+//ENUM
+//Tuples
+//Arrays
+//Objects
+//Functions
+//Any/
+//Undefined
+//Null
+
+//Tsconfig.json --littlebit Advance
+//Todo-app Project-HTML CSS & TS
+//REACT.js with Typescript
+   //CRUD opreation with TODO app using API intigration
+   //E-Commrece website with typescript
