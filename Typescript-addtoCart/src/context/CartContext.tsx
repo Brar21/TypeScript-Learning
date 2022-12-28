@@ -1,4 +1,6 @@
 import { createContext,ReactNode,useContext, useState } from "react";
+import { ShoppingCart } from "../components/ShoppingCart";
+import { useLocalStroge } from "../hooks/useLocalStroge";
 type ShoppingCartProviderProps = {
     children:ReactNode
 }
@@ -24,7 +26,7 @@ export function useShoppingCart()
 }
 export function ShoppingCartProvider({ children }:ShoppingCartProviderProps)
 {
-    const [cartItems,setCartItems] = useState<CartItem[]>([]);
+    const [cartItems,setCartItems] = useLocalStroge<CartItem[]>("Shopping-cart",[]);
     const [isOpen,setIsOpen]=useState(false)
     function getItemQuantity(id: number)
     {
@@ -93,6 +95,7 @@ export function ShoppingCartProvider({ children }:ShoppingCartProviderProps)
     return (
         <ShoppingCartContext.Provider value={{getItemQuantity,increaseCartQuantity,decreaseCartQuantity,removeFromCart,cartItems,cartQuantity,openCart,closeCart}}>
             {children}
+            <ShoppingCart isOpen={isOpen} />
         </ShoppingCartContext.Provider>
     )
 }
