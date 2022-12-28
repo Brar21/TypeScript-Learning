@@ -13,7 +13,7 @@ const Navbar = () => {
           <NavLink to='/about'>
           <h3>About</h3>
           </NavLink>
-              
+              <button style={{width:'3rem',height:'3rem',background:'transparent',borderRadius:'50%'}} >Cart</button>
     </div>
   )
 }
