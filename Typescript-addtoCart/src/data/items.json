@@ -1,6 +1,21 @@
-{
+[{
     "id":1,
     "name":"Book",
     "price":10.99,
     "imgUrl":"https://thumbs.dreamstime.com/b/old-book-flying-letters-magic-light-background-bookshelf-library-ancient-books-as-symbol-knowledge-history-218640948.jpg"
-}
+},{
+    "id":1,
+    "name":"Book",
+    "price":10.99,
+    "imgUrl":"https://thumbs.dreamstime.com/b/old-book-flying-letters-magic-light-background-bookshelf-library-ancient-books-as-symbol-knowledge-history-218640948.jpg"
+},{
+    "id":1,
+    "name":"Book",
+    "price":10.99,
+    "imgUrl":"https://thumbs.dreamstime.com/b/old-book-flying-letters-magic-light-background-bookshelf-library-ancient-books-as-symbol-knowledge-history-218640948.jpg"
+},{
+    "id":1,
+    "name":"Book",
+    "price":10.99,
+    "imgUrl":"https://thumbs.dreamstime.com/b/old-book-flying-letters-magic-light-background-bookshelf-library-ancient-books-as-symbol-knowledge-history-218640948.jpg"
+}]

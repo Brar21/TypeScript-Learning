@@ -1,14 +1,15 @@
 import StoreItems from '../components/StoreItems';
-import items from '../data/items.json';
+import storeItems from '../data/items.json';
 function Store(){
-  return (
+    return (
+        <>
+            <h1>Store</h1>
       <div>
-          {items.map(item=>(
-          <div key={item.id}>
-              <StoreItems {...item} />
-          </div>
-      ) )} 
+                {storeItems.map(el => (
+             <StoreItems {...el}/> 
+          ))}
     </div>
+      </>
   )
 }
 
