@@ -4,7 +4,7 @@ function Store(){
     return (
         <>
             <h1>Store</h1>
-      <div>
+            <div style={{ display: 'grid'}}>
                 {storeItems.map(el => (
              <StoreItems {...el}/> 
           ))}
