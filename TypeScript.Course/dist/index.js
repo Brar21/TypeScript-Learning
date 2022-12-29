@@ -4,3 +4,7 @@
 //error Handling
 var hello = 2;
 console.log(hello);
+function printData(data) {
+    console.log(data);
+}
+printData("hi");
