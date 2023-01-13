@@ -22,8 +22,20 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
-
+.buttoncomponent{
+ font-size: 30px;
+ padding: 1rem;
+ border-radius: 15px;
+ font-weight: 800
+}
+.buttoncomponent :hover{
+    background-color:gray;
+    border: white;
+    color: white;
+    cursor: pointer;
+}
 .App-link {
   color: #61dafb;
 }

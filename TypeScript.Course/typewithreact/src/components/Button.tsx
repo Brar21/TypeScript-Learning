@@ -4,16 +4,14 @@ import React from 'react'
 interface ButtonProps
 {
     text: string,
-    paragraph: string,
-    email?: string 
+    handleClick:()=>void
     //for optional if we dont' want to use a props we can simply use "?" after name prop.
 }
-const Button = ({text,paragraph,email}:ButtonProps) => {
+const Button = ({text,handleClick}:ButtonProps) => {
     return (
       <>
-      <div>{text}</div>
-            <p>{paragraph}</p>
-            <p>{email}</p>
+      <button className='buttoncomponent' onClick={handleClick}>{text}</button>
+           
             </>
   )
 }
