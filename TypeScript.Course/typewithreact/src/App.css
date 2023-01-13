@@ -44,9 +44,10 @@
 .todoinput{
     width: 20rem;
     padding: 1.5rem;
-    padding-top: 40px;
+    padding-top: 30px;
     border-radius: 15px;
-    margin-right: 1rem
+    margin-right: 1rem;
+    font-size: 30px
 }
 .App-link {
   color: #61dafb;

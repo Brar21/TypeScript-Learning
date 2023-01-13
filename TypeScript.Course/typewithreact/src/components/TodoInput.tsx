@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Button from './Button'
+//import Button from './Button'
 //todo -->input
 //todo submit --> button
 type TodoProps = {
-    
+  handleAdd:(text:string)=>void  
 }
 const TodoInput = (props: TodoProps) =>
 {
@@ -13,10 +13,17 @@ const TodoInput = (props: TodoProps) =>
     {
         setText(e.target.value)
     }
+    const handleClick:React.MouseEventHandler<HTMLButtonElement> = () =>
+    {
+        props.handleAdd(text)
+     setText("")   
+    }
   return (
       <div className='todo'>
-          <input className='todoinput' type="text" value={text} onChange={handleChange} />
-          <Button text='ADD TODO'/>
+          <input className='todoinput' placeholder='Add Todo...' type="text" value={text} onChange={handleChange} />
+          {/*<Button text='ADD TODO' handleClick={handleClick}/>
+          */}
+          <button className='buttoncomponent' onClick={handleClick}>Add Todo</button>
     </div>
   )
 }
