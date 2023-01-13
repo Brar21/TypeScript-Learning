@@ -10,11 +10,11 @@ function App()
           <header className="App-header">
               <h1>Counter : {value}</h1>
               <div>     
-              <Button text="Add" handleClick={() => setValue(value + 1)} />
+              <Button text="Add" disabled={value===20}  handleClick={() => setValue(value + 1)} />
        &nbsp;
        &nbsp;
        &nbsp;
-                  <Button text="Minus" handleClick={() => setValue(value - 1)} />
+                  <Button text="Minus" disabled={value===0} handleClick={() => setValue(value - 1)} />
               
               </div>
       </header>
