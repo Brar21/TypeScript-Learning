@@ -31,7 +31,11 @@ function App()
               <h1>Todo Input</h1>
               <TodoInput handleAdd={handleAdd} />
               
-              {/*<p>{todo}</p>*/}
+              {todo.map((e)=>
+              <div key={e.id}>
+                  <h3>{e.text}</h3>
+              </div>
+              )}
               <hr />
               <h1>Counter : {value}</h1>
               <div>     
