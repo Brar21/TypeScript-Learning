@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Button from './components/Button';
+import TodoInput from './components/TodoInput';
 
 function App()
 {
@@ -8,6 +9,8 @@ function App()
   return (
     <div className="App">
           <header className="App-header">
+              <h1>Todo Input</h1>
+              <TodoInput/>
               <h1>Counter : {value}</h1>
               <div>     
               <Button text="Add" disabled={value===20}  handleClick={() => setValue(value + 1)} />

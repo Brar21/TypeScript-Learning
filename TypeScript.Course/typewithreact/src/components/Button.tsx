@@ -4,7 +4,7 @@ import React from 'react'
 interface ButtonProps
 {
     text: string,
-    handleClick:()=>void,
+    handleClick?:()=>void,
     disabled?:boolean
     //for optional if we dont' want to use a props we can simply use "?" after name prop.
 }

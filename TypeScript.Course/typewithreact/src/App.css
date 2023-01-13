@@ -36,6 +36,18 @@
     color: white;
     cursor: pointer;
 }
+.todo{
+    justify-content: center;
+    align-items: center;
+    /*margin: auto*/
+}
+.todoinput{
+    width: 20rem;
+    padding: 1.5rem;
+    padding-top: 40px;
+    border-radius: 15px;
+    margin-right: 1rem
+}
 .App-link {
   color: #61dafb;
 }
