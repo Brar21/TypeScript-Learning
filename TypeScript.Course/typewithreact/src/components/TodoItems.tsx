@@ -1,6 +1,7 @@
 import React from 'react'
 import { Todo } from '../App'
-import { DeletetData } from '../api/api'
+import { getData } from '../api/api'
+import { idText } from 'typescript'
 type Props = {
     todo: Todo
     Delete:(id:Todo)=>void
@@ -10,7 +11,7 @@ const TodoItems = ({todo,Delete}:Props) => {
   return (
       <div>
           <h1>{text}</h1>
-          <button onClick={()=>Delete(id)}>Delete</button>
+          <button onClick={()=>Delete(todo.id)}>Delete</button>
     </div>
   )
 }

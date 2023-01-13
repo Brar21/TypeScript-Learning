@@ -4,10 +4,10 @@ import './App.css';
 import Button from './components/Button';
 import TodoInput from './components/TodoInput';
 import TodoList from './components/TodoList';
-
+import { v4 as uuidV4 } from "uuid";
 export interface Todo
 {
-    id: number,
+    id: string,
     text:string
 }
 
@@ -31,7 +31,7 @@ function App()
     const handleAdd = (text:string) =>
     {
         const todoItem: Todo = {
-            id: Date.now(),
+            id: uuidV4(),
             text,
         }
         postData(todoItem)
@@ -41,12 +41,12 @@ function App()
         })
         
     }
-    const Delete = (id:number) =>
+    const Delete = (id:string) =>
     {
       let newList=  todo.filter(
             function (e)
             {
-                return e.id!=id
+                return e.id!==id
             }
         )
         setTodo(newList)

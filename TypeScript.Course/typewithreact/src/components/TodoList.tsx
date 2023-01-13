@@ -3,7 +3,7 @@ import { Todo } from '../App'
 import TodoItems from './TodoItems'
 type Prop = {
     data: Todo[]
-    Delete:(todo:Todo)=>void
+    Delete:(id:Todo)=>void
 }
 const TodoList = ({data,Delete}:Prop) => {
   
