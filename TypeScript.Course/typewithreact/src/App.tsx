@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { DeletetData, getData, postData } from './api/api';
 import './App.css';
 import Button from './components/Button';
 import TodoInput from './components/TodoInput';
+import TodoList from './components/TodoList';
 
-interface Todo
+export interface Todo
 {
     id: number,
     text:string
@@ -12,17 +14,43 @@ interface Todo
 function App()
 {
     const [value,setValue] = useState<number>(0);
-    const [todo,setTodo]=useState<Todo[]>([])
+    const [todo,setTodo] = useState<Todo[]>([])
+    
+    useEffect(() =>
+    {
+        handlegetTodo()
+    },[])
+    const handlegetTodo = () =>
+    {
+        getData()
+            .then(res =>
+            {
+            setTodo(res)
+        })
+    }
     const handleAdd = (text:string) =>
     {
         const todoItem: Todo = {
             id: Date.now(),
             text,
         }
-        setTodo(
-            [...todo,todoItem]
-        )
+        postData(todoItem)
+            .then(kuchbi =>
+            {
+            handlegetTodo()
+        })
         
+    }
+    const Delete = (id:number) =>
+    {
+      let newList=  todo.filter(
+            function (e)
+            {
+                return e.id!=id
+            }
+        )
+        setTodo(newList)
+        handlegetTodo()
     }
     console.log(todo)
   return (
@@ -30,13 +58,9 @@ function App()
           <header className="App-header">
               <h1>Todo Input</h1>
               <TodoInput handleAdd={handleAdd} />
-              
-              {todo.map((e)=>
-              <div key={e.id}>
-                  <h3>{e.text}</h3>
-              </div>
-              )}
-              <hr />
+              <TodoList data={todo} Delete={Delete}/>
+            
+          
               <h1>Counter : {value}</h1>
               <div>     
                   <Button
